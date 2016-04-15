@@ -1,0 +1,7 @@
+Things to do:
+- Find a DB to store external sources needed
+- Get external sources data (music, weather)
+- Clean the data
+- Integrate/Transform the data into a DB
+- Start analytics
+- (Implement web interface to display results)
