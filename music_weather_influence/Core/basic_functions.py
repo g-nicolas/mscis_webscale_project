@@ -4,6 +4,13 @@ import json
 import time
 
 # Files/Folders related functions
+def get_files_from_folder(directory):
+    if os.path.exists(directory):
+        return os.listdir(directory)
+    else:
+        print "Folder does not exist"
+
+# Files/Folders related functions
 def folder_exist(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)

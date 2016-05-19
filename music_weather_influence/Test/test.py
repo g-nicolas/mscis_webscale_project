@@ -1,12 +1,9 @@
-import class_test
+import urllib2
+from Core import basic_functions
+url = "http://api.musicgraph.com/api/v2/track/search?api_key=c8303e90962e3a5ebd5a1f260a69b138&artist_name=Adele&title=hello"
+data = basic_functions.get_Json_From_URL(url)
+response = urllib2.urlopen(url)
+print response
+print data
 
-class Example():
-
-    def run(self):
-        print "Hello, world!"
-        t = class_test.Employee("Bob B", 23000)
-        print t.test_func()
-        #class_test.Employee("Bob B", 23000).test_func()
-
-if __name__ == '__main__':
-    Example().run()
+def music_graph_request_builder()

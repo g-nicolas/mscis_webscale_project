@@ -1,7 +1,7 @@
 import json
 import urllib2
 
-from Core import functions
+from Core import basic_functions
 
 #directory1 = "../Data Folder"
 directory1 = "../Rsc/Data/LastFM/"
@@ -26,7 +26,7 @@ def get_Json_From_URL(url):
 j = get_Json_From_URL(url_lastFM1)
 
 # Writing JSON data
-functions.save_Json_To_File(directory1, "data_test.json", j)
+basic_functions.save_Json_To_File(directory1, "data_test.json", j)
 
 
 

@@ -1,0 +1,75 @@
+{
+  "ID": "test", 
+  "TopCharts": [
+    {
+      "track_rank": 1, 
+      "track_name": "Don't Be So Shy (Filatov & Karas Remix)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Imany", 
+      "track_genre": "Alternative"
+    }, 
+    {
+      "track_rank": 2, 
+      "track_name": "CAN'T STOP THE FEELING! (Original Song From DreamWorks Animation's \"Trolls\")", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Justin Timberlake", 
+      "track_genre": "Western Pop"
+    }, 
+    {
+      "track_rank": 3, 
+      "track_name": "Faded", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Alan Walker", 
+      "track_genre": "House"
+    }, 
+    {
+      "track_rank": 4, 
+      "track_name": "This Girl (Kungs vs. Cookin' On 3 Burners)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Single - Kungs & Cookin' On 3 Burners", 
+      "track_genre": "__NA__"
+    }, 
+    {
+      "track_rank": 5, 
+      "track_name": "Sofia", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Alvaro Soler", 
+      "track_genre": "__NA__"
+    }, 
+    {
+      "track_rank": 6, 
+      "track_name": "Cheap Thrills (feat. Sean Paul)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Sia", 
+      "track_genre": "Western Pop"
+    }, 
+    {
+      "track_rank": 7, 
+      "track_name": "DUELE EL CORAZON (feat. Wisin)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Enrique Iglesias", 
+      "track_genre": "Latin Pop"
+    }, 
+    {
+      "track_rank": 8, 
+      "track_name": "One Dance (feat. Wizkid & Kyla)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Drake", 
+      "track_genre": "Western Hip-Hop/Rap"
+    }, 
+    {
+      "track_rank": 9, 
+      "track_name": "Stressed Out", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "twenty one pilots", 
+      "track_genre": "Western Pop"
+    }, 
+    {
+      "track_rank": 10, 
+      "track_name": "This Is What You Came For (feat. Rihanna)", 
+      "track_weather_ID": "track_weather_ID", 
+      "track_artist": "Calvin Harris", 
+      "track_genre": "Western Pop"
+    }
+  ]
+}

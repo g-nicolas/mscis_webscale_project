@@ -1,7 +1,7 @@
 from Music import music_manager
 from Libs import spotipy
 
-import functions, music_functions
+import basic_functions, music_functions
 
 
 # Files/Folders related functions
@@ -19,14 +19,14 @@ import functions, music_functions
 # At Startup do that
 #
 
-directory1 = "../Rsc/Data/Music/LastFM/"
-directory2 = "../Rsc/Data/Music/Itunes/"
-directory3 = "../Rsc/Data/Music/Deezer/"
+directory1 = "../Rsc/Data/Original_Music_Source/LastFM/"
+directory2 = "../Rsc/Data/Original_Music_Source/Itunes/"
+directory3 = "../Rsc/Data/Original_Music_Source/Deezer/"
 
 # Check if the folder exists, otherwise creates it
-functions.folder_exist(directory1)
-functions.folder_exist(directory2)
-functions.folder_exist(directory3)
+basic_functions.folder_exist(directory1)
+basic_functions.folder_exist(directory2)
+basic_functions.folder_exist(directory3)
 
 # Launch music manager To Fetch data --> MUST BE DONE ONCE A WEEK
 #music_manager.main()
@@ -55,9 +55,15 @@ def get_Metadata_Spotify(artist="", track=""):
 #get_Genre_GraceNote("Prince", "Purple rain")
 #get_Genre_GraceNote("adele", "hello")
 print "--------------------------------------"
-#get_Genre_GraceNote('Drake', 'one dance')
+print music_functions.get_Genre_GraceNote("The Weeknd", "Can't Feel My Face")
 print "--------------------------------------"
-music_functions.get_Genre_GraceNote_DISTINCT('Drake', 'one dance')
+print "--------------------------------------"
+print music_functions.get_Genre_GraceNote_DISTINCT("The Weeknd", "Can't Feel My Face")
+print "--------------------------------------"
+#music_functions.get_Genre_GraceNote_DISTINCT('Drake', 'one dance')
+
+basic_functions.get_files_from_folder(directory1)
+
 #get_Metadata_Spotify("Drake", "One dance")
 #print pygn.search(clientID, userID, 'ACDC', 'back in black')
 #result = pygn.search(clientID=clientID, userID=userID, artist='ACDC', track='Hells Bells')

@@ -61,8 +61,14 @@ def get_Genre_GraceNote_DISTINCT(artist='', track=''):
         #print key
         #print genre_meta[subkey]["TEXT"]
         genres_list.append(genre_meta[subkey]["TEXT"])
-    genre = genres_list.pop(0)
-    print genre
+    print genres_list
+    if genres_list.__len__()>0:
+        genre = genres_list.pop(0)
+    else:
+        genre = "__NA__"
+
+
+    return genre
 
 def get_Genre_GraceNote(artist='', track=''):
     clientID = '14783488-D30D8E1E9B67E9A8776931C7A34DC429'  # Enter your Client ID here
@@ -90,7 +96,14 @@ def get_Genre_GraceNote(artist='', track=''):
         #print key
         #print genre_meta[subkey]["TEXT"]
         genres_list.append(genre_meta[subkey]["TEXT"])
-    print genres_list
+    #print genres_list
+    if genres_list.__len__() > 0:
+        genre = genres_list.pop(0)
+    else:
+        genre = "__NA__"
+
+    return genre
+
 
 
 
