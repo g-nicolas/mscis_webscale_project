@@ -69,7 +69,7 @@ class Spotify(object):
             if requests_session:  # Build a new session.
                 self._session = requests.Session()
             else:  # Use the Requests API module as a "session".
-                from requests import api
+                from Libs.requests import api
                 self._session = api
 
     def _auth_headers(self):

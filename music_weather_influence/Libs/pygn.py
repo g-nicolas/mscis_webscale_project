@@ -442,7 +442,8 @@ def search_custom(clientID='', userID='', artist='', album='', track='', toc='')
 			metadata['artist_type'] = _getMultiElemText(albumElem, 'ARTIST_TYPE', 'ORD', 'ID')
 		else:
 			# Try to get OET again by fetching album by GNID
-			metadata['artist_origin'], metadata['artist_era'], metadata['artist_type'] = _getOET(clientID, userID, metadata['album_gnid'])
+			#metadata['artist_origin'], metadata['artist_era'], metadata['artist_type'] = _getOET(clientID, userID, metadata['album_gnid'])
+			pass
 
 		# Parse track metadata
 		matchedTrackElem = albumElem.find('MATCHED_TRACK_NUM')

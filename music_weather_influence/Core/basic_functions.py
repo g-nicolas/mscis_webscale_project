@@ -3,12 +3,14 @@ import urllib2
 import json
 import time
 
+
 # Files/Folders related functions
 def get_files_from_folder(directory):
     if os.path.exists(directory):
         return os.listdir(directory)
     else:
         print "Folder does not exist"
+
 
 # Files/Folders related functions
 def folder_exist(directory):
@@ -17,6 +19,7 @@ def folder_exist(directory):
         print "Folder created"
     else:
         print "Folder already exist"
+
 
 def file_exist(path, filename):
     if os.path.exists(path):
@@ -27,6 +30,7 @@ def file_exist(path, filename):
     else:
         print "Folder does not exist"
         return 2
+
 
 def file_creator(path, filename):
     if os.path.exists(path):
@@ -40,6 +44,7 @@ def file_creator(path, filename):
         print "Folder does not exist"
         folder_exist(path)
         file_creator(path, filename)
+
 
 def file_creator_writer(path, filename, content):
     if os.path.exists(path):
@@ -62,24 +67,38 @@ def get_Json_From_URL(url):
     data = json.load(response)
     return data
 
+def get_Json_From_file(file_path):
+    with open(file_path) as json_file:
+        json_data = json.load(json_file)
+    json_file.close()
+    return json_data
+
 # Writing JSON data to File
 def save_Json_To_File(path, filename, json_data):
     if file_exist(path, filename) == 0:
-        timestr = time.strftime("%Y%m%d")
-        with open(path + filename + "_" + timestr + ".json", 'w') as f:
-            json.dump(json_data, f, indent=2)
-        print "File " + filename + " created: "
+        if filename.endswith(".json"):
+            fname = filename.partition('.json')[0]
+        else:
+            fname = filename.partition('.xml')[0]
+        if fname[-1].isdigit():
+            with open(path + fname + ".json", 'w') as f:
+                json.dump(json_data, f, indent=2, encoding="utf-8")
+            print "File " + filename + " created: "
+        else:
+            timestr = time.strftime("%Y%m%d")
+            with open(path + filename + "_" + timestr + ".json", 'w') as f:
+                json.dump(json_data, f, indent=2)
+            print "File " + filename + " created: "
     elif file_exist(path, filename) == 1:
         print "File already exists"
     else:
         print "File already exists"
 
 
-
 # Itunes Requests related functions
 def get_XML_From_URL(url):
     response = urllib2.urlopen(url)
-    #data = json.load(response)
+    # data = json.load(response)
     return response
 
 # Writing XML data to File
@@ -87,7 +106,7 @@ def save_XML_To_File(path, filename, url):
     if file_exist(path, filename) == 0:
         timestr = time.strftime("%Y%m%d")
         with open(path + filename + "_" + timestr + ".xml", 'w') as f:
-            #f.write(urllib2.urlopen(url).read())
+            # f.write(urllib2.urlopen(url).read())
             f.write(url.read())
             f.close()
         print "File " + filename + " created: "

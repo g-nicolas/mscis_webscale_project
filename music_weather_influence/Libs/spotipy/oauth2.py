@@ -1,7 +1,7 @@
 
 from __future__ import print_function
 import base64
-import requests
+from Libs import requests
 import os
 import json
 import time
@@ -23,7 +23,7 @@ class SpotifyOauthError(Exception):
 class SpotifyClientCredentials(object):
     OAUTH_TOKEN_URL = 'https://accounts.spotify.com/api/token'
 
-    def __init__(self, client_id=None, client_secret=None):
+    def __init__(self, client_id = "2c13de0c7a684ae5b1c3fd946bd45798", client_secret = "bdebfaceaf3b48cdbe62c0e797606f31"):
         """
         You can either provid a client_id and client_secret to the
         constructor or set SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET
