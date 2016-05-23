@@ -42,3 +42,4 @@ def get_weather(city):
 
 get_weather("Geneva")
 get_weather("Zurich")
+get_weather("Innsbruck")
