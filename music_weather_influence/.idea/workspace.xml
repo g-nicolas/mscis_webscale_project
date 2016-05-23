@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75494429-3bba-43c0-a453-410df4a6f3df" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Rsc/Data/Cleaned_Music_Source/Itunes/test_json_cleaning_20160513.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Rsc/Data/Cleaned_Music_Source/Itunes/test_xml_cleaning_20160513.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/basic_functions.py" afterPath="$PROJECT_DIR$/Core/basic_functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/music_functions.py" afterPath="$PROJECT_DIR$/Core/music_functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/startup.py" afterPath="$PROJECT_DIR$/Core/startup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libs/pygn.py" afterPath="$PROJECT_DIR$/Libs/pygn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libs/spotipy/client.py" afterPath="$PROJECT_DIR$/Libs/spotipy/client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libs/spotipy/oauth2.py" afterPath="$PROJECT_DIR$/Libs/spotipy/oauth2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libs/spotipy/util.py" afterPath="$PROJECT_DIR$/Libs/spotipy/util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Music/Music_manager.py" afterPath="$PROJECT_DIR$/Music/Music_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Music/parser_Itunes.py" afterPath="$PROJECT_DIR$/Music/parser_Itunes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Music/parser_LastFM.py" afterPath="$PROJECT_DIR$/Music/parser_LastFM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/test.py" afterPath="$PROJECT_DIR$/Test/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Weather/weather_func.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
     </list>
     <ignored path="music_weather_influence.iws" />
     <ignored path=".idea/workspace.xml" />
