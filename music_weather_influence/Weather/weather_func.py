@@ -24,7 +24,7 @@ def calendar(week):
 
 
 def get_weather(city):
-    week_list = [19,18,17,16,15,14]
+    week_list = [20,19,18,17,16,15,14]
     weather = {}
     weather["City"] = city
     for week in week_list:
